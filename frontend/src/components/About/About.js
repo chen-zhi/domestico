@@ -1,11 +1,10 @@
 import React from 'react';
 import './About.css';
-import mapUrl from '../../assets/about/bg.jpeg';
 
 const About = () => {
     return (
         <div className="about">
-            <div className="bg" style={{ background: `no-repeat url(${mapUrl}) center` }}>
+            <div className="bg">
                 <div className="bg-text">
                     <h1>We are doing web development</h1>
                     <p>Contact us if you are interested</p>
