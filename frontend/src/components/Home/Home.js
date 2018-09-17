@@ -4,7 +4,7 @@ import './Home.css';
 const Home = () => (
 <div className="home">
 <div className="jumbotron">
-  <h1 className="display-4">Demestico</h1>
+  <h1 className="display-4">Domestico</h1>
   <p className="lead">Domestico is a household management application which helps you to organize house cleaning, laundry, and chores with your partner or roommies.</p>
   <hr className="my-4" />
   <p>Click try demo to open a free domestico application.</p>
