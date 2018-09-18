@@ -1,12 +1,14 @@
 import React from 'react';
 import './Header.css';
 import logoUrl from '../../assets/logo.svg';
+import { Link } from "react-router-dom";
+
 
 const Header = () => {
   return (
     <div className="header">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img className="logo" src={logoUrl} alt="domestico" />
           Domestico</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,13 +17,13 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+              <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Demo</a>
+              <Link to="/demo" className="nav-link">Demo</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">About</a>
+              <Link to="/about" className="nav-link">About</Link>
             </li>
           </ul>
         </div>
