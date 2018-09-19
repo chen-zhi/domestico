@@ -18,28 +18,46 @@
     .content {
         margin: 40px 10vw;
     }
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .member {
+        display: flex;
+        align-items: center;
+        padding: 3vw 0 1em 3vw;
+
+        .profile {
+            // padding: 30px;
+            margin: 0 5vw 0 3vw;
+            // width: 300px;
+            // border: 1px solid rgb(201, 193, 193);
+            border-radius: 15px;
+            text-align: center;
+    
+            img.profile-img {
+                width: 150px;
+                margin-bottom: 10px;
+            }
+            .name {
+                font-weight: bold;
+                margin-bottom: 0.8rem;
+            }
+            i {
+                margin: 1em 10px 0 10px;
+                // width: 30px;
+                font-size: 1.5em;
+            }
+        }
+        
+        //For mobile device
+        @media screen and (max-width: 992px) {
+            .description, i {
+                display: none;
+            }
+          }
+    }
 
     
-
-    .profile {
-        padding: 30px;
-        width: 300px;
-        border: 1px solid rgb(201, 193, 193);
-        border-radius: 15px;
-        text-align: center;
-
-        img.profile-img {
-            width: 150px;
-            margin-bottom: 10px;
-        }
-        .name {
-            font-weight: bold;
-            margin-bottom: 0.8rem;
-        }
-        i {
-            margin: 1em 10px 0 10px;
-            // width: 30px;
-            font-size: 1.5em;
-        }
-    }
 }
